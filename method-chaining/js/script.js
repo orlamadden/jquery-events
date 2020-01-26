@@ -10,4 +10,12 @@ $(document).ready(function() {
         $('#button1').addClass('makeRed').removeClass('makeBorder');
     });
 
+    $('#button2').click(function() {
+        $('p').hide(2000).show(1000);
+    });
+
+    $('#button3').click(function() {
+        $('p').fadeOut().fadeIn();
+    });
+
 }); 
