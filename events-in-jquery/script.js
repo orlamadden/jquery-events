@@ -108,9 +108,22 @@ $(document).ready(function() {
    $('#button-effect2').click(function() {
         $('#p2').toggle(1000);
    });
-
+   //slides paragraph
    $('#button-effect3').click(function() {
         $('#p3').slideToggle(1000);
    });
 
+   $('#button-effect4').mouseenter(function() {
+        $('#button-effect4').fadeTo(1000, 0.5);
+   });
+
+   $('#button-effect4').mouseleave(function() {
+       $('#button-effect4').fadeTo(1000, 1);
+   });
+
+   $('#button-effect5').click(function() {
+       $('#button-effect5').toggle("bounce", {times: 3}, 'slow');
+   });
+
+   
 }); 
