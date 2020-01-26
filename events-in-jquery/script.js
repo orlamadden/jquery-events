@@ -97,11 +97,20 @@ $(document).ready(function() {
    });
 
    // hides the first button slowly
-   $('#button-effect').click(function() {
-        $('#button-effect').hide('slow'); // hides button slowly
-        $('#button-effect').hide('medium'); // hides button a little faster
-        $('#button-effect').hide('fast'); // hides button faster
-        $('#button-effect').hide(5000); // hides button with custom ms duration
+   $('#button-effect1').click(function() {
+        $('#button-effect1').hide('slow'); // hides button slowly
+        // $('#button-effect').hide('medium'); // hides button a little faster
+        // $('#button-effect').hide('fast'); // hides button faster
+        // $('#button-effect').hide(5000); // hides button with custom ms duration
+   });
+
+   // toggles paragraph
+   $('#button-effect2').click(function() {
+        $('#p2').toggle(1000);
+   });
+
+   $('#button-effect3').click(function() {
+        $('#p3').slideToggle(1000);
    });
 
 }); 
