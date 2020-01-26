@@ -13,7 +13,7 @@ $(document).ready(function() {
     // changes font size of particular h2 headings
     // and changes the other h2 headings back to
     //original size
-    
+
     $("#head-html").hover(function(){
         $("#head-html").css('font-size', '2em');
         $("#head-sql").css('font-size', '1em');
@@ -77,22 +77,31 @@ $(document).ready(function() {
     });
 
 
-//     $("#stream1_btn").on("click", function() {
-//         $(".stream1").removeClass('highlight_stream');
-//         $(".stream2").removeClass('highlight_stream');
-//         $(".stream3").removeClass('highlight_stream');
-//         $(".stream1").addClass('highlight_stream');
-//    });
-//    $("#stream2_btn").on("click", function() {
-//         $(".stream1").removeClass('highlight_stream');
-//         $(".stream2").removeClass('highlight_stream');
-//         $(".stream3").removeClass('highlight_stream');
-//         $(".stream2").addClass('highlight_stream');
-//    });
-//    $("#stream3_btn").on("click", function() {
-//         $(".stream1").removeClass('highlight_stream');
-//         $(".stream2").removeClass('highlight_stream');
-//         $(".stream3").removeClass('highlight_stream');
-//         $(".stream3").addClass('highlight_stream');
-//    });
+    $("#stream1_btn").on("click", function() {
+        $(".stream1").removeClass('highlight_stream');
+        $(".stream2").removeClass('highlight_stream');
+        $(".stream3").removeClass('highlight_stream');
+        $(".stream1").addClass('highlight_stream');
+   });
+   $("#stream2_btn").on("click", function() {
+        $(".stream1").removeClass('highlight_stream');
+        $(".stream2").removeClass('highlight_stream');
+        $(".stream3").removeClass('highlight_stream');
+        $(".stream2").addClass('highlight_stream');
+   });
+   $("#stream3_btn").on("click", function() {
+        $(".stream1").removeClass('highlight_stream');
+        $(".stream2").removeClass('highlight_stream');
+        $(".stream3").removeClass('highlight_stream');
+        $(".stream3").addClass('highlight_stream');
+   });
+
+   // hides the first button slowly
+   $('#button-effect').click(function() {
+        $('#button-effect').hide('slow'); // hides button slowly
+        $('#button-effect').hide('medium'); // hides button a little faster
+        $('#button-effect').hide('fast'); // hides button faster
+        $('#button-effect').hide(5000); // hides button with custom ms duration
+   });
+
 }); 
