@@ -121,9 +121,5 @@ $(document).ready(function() {
        $('#button-effect4').fadeTo(1000, 1);
    });
 
-   $('#button-effect5').click(function() {
-       $('#button-effect5').toggle("bounce", {times: 3}, 'slow');
-   });
-
    
 }); 
