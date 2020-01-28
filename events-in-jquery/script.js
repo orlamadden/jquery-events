@@ -121,8 +121,13 @@ $(document).ready(function() {
 //        $('#button-effect4').fadeTo(1000, 1);
 //    });
 
-    $('p').click(function() { // p tag is the parent element
-        $(this).children('a').css('background-color', 'yellow'); // a tag is the child
+    // $('p').click(function() { // p tag is the parent element
+    //     $(this).children('a').css('background-color', 'yellow'); // a tag is the child
+    // });
+
+
+    $('img').click(function() {
+        $(this).next().children('p').slideDown();
     });
    
 }); 

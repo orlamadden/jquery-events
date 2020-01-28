@@ -52,6 +52,7 @@ div {
 
 .card_para {
 	flex:1 0 auto;
+    display: none;
 }
 
 #container {
