@@ -129,9 +129,19 @@ $(document).ready(function() {
     $('img').click(function() {
         $(this).next().children('p').slideDown();
     });
-    
+
     $('.card').click(function() {
         $(this).toggleClass('highlighted');
+    });
+
+    // cards that are not currently selected will be hidden when `select-btn` is clicked
+    $('#select-btn').click(function() {
+        $('.card:not(.highlighted)').hide();
+    });
+
+    // selects all cards
+    $('#all-btn').click(function() {
+        $('.card').show();
     });
    
 }); 
