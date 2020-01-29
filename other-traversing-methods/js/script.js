@@ -18,12 +18,18 @@ $(document).ready(function(){
         $('#panel .container').siblings().fadeTo(1000, 1);
     });
 
-    $('.theButton').mouseenter(function () {
-        $(this).addClass('makeBlack');
-    });
+    // $('.theButton').mouseenter(function () {
+    //     $(this).addClass('makeBlack');
+    // });
 
-    $('.theButton').mouseleave(function () {
-        $(this).removeClass('makeBlack');
+    // $('.theButton').mouseleave(function () {
+    //     $(this).removeClass('makeBlack');
+    // });
+
+    // changes reset text to color of button pushed
+    $('.theButton').click(function() {
+        const panelCol = $(this).css('background-color');
+        $('.superButton').text(panelCol);
     });
 
 });
