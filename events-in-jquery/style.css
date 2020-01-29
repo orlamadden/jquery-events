@@ -83,6 +83,10 @@ div {
 	background-color: #EB5255;
 }
 
+.highlighted {
+    background-color: pink;
+}
+
 #my_footer {
 	width:100%;
 	text-align: center;

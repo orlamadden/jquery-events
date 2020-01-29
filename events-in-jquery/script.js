@@ -129,5 +129,9 @@ $(document).ready(function() {
     $('img').click(function() {
         $(this).next().children('p').slideDown();
     });
+    
+    $('.card').click(function() {
+        $(this).toggleClass('highlighted');
+    });
    
 }); 
